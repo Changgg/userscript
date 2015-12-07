@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           MyDouban_book
-// @namespace      https://HeawerCher
-// @description
+// @namespace      https://github.com/heawercher/userscript
+// @description    It is convinient.
 // @author         Che.
 // @version        0.1
 // @include        http://book.douban.com/subject/*

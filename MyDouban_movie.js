@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           MyDouban_movie
-// @namespace      https://HeawerCher
-// @description
+// @namespace      https://github.com/heawercher/userscript
+// @description    Make it easier
 // @author         Che.
 // @version        0.1
 // @include        http://movie.douban.com/subject/*
@@ -114,10 +114,11 @@ function addMore() {
     }
   }, {
     name: "edmag",
-    href: "http://edmag.net/search-"+title+".html" ,
+    href: "http://edmag.net/search-" + title + ".html",
     len: function(doc) {
       return $(doc).find("a[href^='/detail-']").length
-    }}]
+    }
+  }]
 
   for (var i = 0; i < download_table.length; i++) {
     function fu(doc, a, b, c) {
@@ -178,22 +179,6 @@ function addMore() {
 
 }
 
-//  加入网页
-//  $("#buyinfo-ebook").attr("id", 'info-ebook')
-//  $("#info-ebook").find(".ebook-tag").remove()
-//  $("#info-ebook").find("ul li").html("")
-//  len = mlook_li.length
-//  if (len >= 3){
-//    len = 3
-//  }
-//  var item = $("<a>")
-//  for (i = 0; i < len; i++) {
-//    absurl = 'https://www.mlook.mobi' + mlook_li[i]
-//    item = $("<a>").attr({
-//      href: absurl,
-//      target: "_blank"
-//    }).html("<span class=\"\">"+title+"</span>" + "<span class=\"buylink-price\"><span class=\"\">mlook</span></span>" )
-//    $("#info-ebook").find("ul li").append(item)
 function dc_ready(event) {
   console.log("Che.")
 }
